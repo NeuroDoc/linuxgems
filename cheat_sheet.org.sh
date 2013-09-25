@@ -23,7 +23,44 @@ apropos word
 info
 
 *** Command Line Utilities:
+**** Basic Navigation (and Examples):
+-----> Source: www.westwind.com/reference/OS-X/commandline/navigation.html#ls
+
+# Change directory - This lets you navigate to different directories (folders):
+cd
+
+# Go into a subdirectory (of the current directory) named "Documents":
+cd Documents
+
+# Go into "Documents", then from there into a subdirectory named "temp":
+cd Documents/temp
+
+# Go up to the parent of the current directory:
+cd ..
+
+# Go up two levels, to the parent's parent:
+cd ../..
+
+# Go to the top of the boot volume:
+cd /
+
+# Go to the top of the boot volume, then into the top-level directory named "Users":
+cd /Users
+
+# Go to your home directory (note: that's a tilde, not a dash):
+cd ~
+
+# Go to your home directory, then into your "Documents" directory:
+cd ~/Documents
+
+# Go to the of the boot volume, then into the top-level directory named "Applications (MacOS 9)". The quote marks tell the shell (command interpreter) to ignore the special characters (spaces and parentheses) in the directory name that would otherwise confuse it:
+cd "/Applications (MacOS 9)"
+
+# Go back to the previous directory:
+cd -
+
 **** Basic File and Directory Operations:
+
 # Print current working directory:
 pwd
 
